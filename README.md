@@ -3,7 +3,7 @@
 
 A Dockerfile for running Owncloud 6 on nginx in a docker instance maintained by supervisord.
 
-This installation builds upon the said to be stable an reliable stackbrew image of Ubuntu 13.10. 
+This installation builds upon the said to be stable and reliable stackbrew image of Ubuntu 13.10. 
 
 ## Installation
 
@@ -16,7 +16,7 @@ $ cd docker-nginx-owncloud6-supervisord
 
 For simplicity the sqlite3 backend is used. For using MySQL or MariaDB edit the Dockerfile to include the appropriate php-mysql package.
 
-It is recommended to use Owncloud over https, so you'll have to provide a valid ssl certificate. You can either generate a self signed certificate, buy one at your favourite CA or get one for free at StartSSL. Remember that you need to remove the password from the key and that you'll have to concatenate the ca.pem and the intermediate certificate together with the certificate of your site into a joined certificate file for nginx. If you run into problems with nginx not accepting the certificate and check for the correct line endings between these three certificates.
+It is recommended to use Owncloud over https, so you'll have to provide a valid ssl certificate. You can either generate a self signed certificate, buy one at your favourite CA or get one for free at StartSSL. Remember that you need to remove the password from the key and that you'll have to concatenate the ca.pem and the intermediate certificate together with the certificate of your site into a joined certificate file for nginx. If you run into problems with nginx not accepting the certificate, check for the correct line endings between these three certificates.
 
 In the end you need to have ssl.key and ssl.crt in this directory for the next step.
 
